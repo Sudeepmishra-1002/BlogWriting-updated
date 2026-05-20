@@ -1293,7 +1293,10 @@ app.delete("/posts/:id", async (req, res) => {
 app.get("/signup", (req, res) => res.render("signup.ejs", { error: null }));
 app.get("/login", (req, res) => res.render("login.ejs", { error: null }));
 
-app.get("/", (req, res) => res.redirect("/posts"));
+// app.get("/", (req, res) => res.redirect("/posts"));
+app.get("/", (req, res) => {
+    res.redirect("/login");
+});
 
 app.get("/logout", (req, res) => {
     // Agar session use kar rahe hain toh session destroy karein
