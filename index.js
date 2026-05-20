@@ -1116,7 +1116,7 @@
 
 
 
-
+require("dotenv").config();
 const bcrypt = require('bcrypt');
 const User = require('./models/User'); 
 const express = require("express");
