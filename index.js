@@ -1133,9 +1133,11 @@ const { format } = require('timeago.js'); // 1. Import kiya
 const Post = require('./models/Post'); 
 
 // 2. MONGODB CONNECTION
-mongoose.connect('mongodb://127.0.0.1:27017/blogDB')
+// mongoose.connect('mongodb://127.0.0.1:27017/blogDB')
+mongoose.connect(process.env.MONGO_URL)
 .then(() => console.log('✅ MongoDB Connected Successfully'))
 .catch(err => console.error('❌ MongoDB Connection Error:', err));
+
 
 // 3. MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
