@@ -305,3 +305,59 @@ CHANGES     03/10/25                                        */
     color: #292929;
     font-size: 1.05rem;
 }
+
+/* ================= HOME FEED IMPROVEMENTS ================= */
+
+.hero-section {
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    min-height: auto !important;
+}
+
+.hero-section h1 {
+    font-size: 4rem !important;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* Feed cards compact */
+.card {
+    padding: 18px !important;
+    margin-bottom: 18px !important;
+    border-radius: 14px;
+}
+
+/* Username section */
+.card h3,
+.username {
+    margin-bottom: 4px !important;
+}
+
+/* Post content */
+.card-text {
+    line-height: 1.5;
+    color: #292929;
+    font-size: 0.97rem;
+    margin-bottom: 10px !important;
+}
+
+/* Reduce large empty spaces */
+.container {
+    margin-top: 10px !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .card {
+        padding: 14px !important;
+    }
+}
